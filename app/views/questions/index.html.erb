@@ -1,0 +1,22 @@
+
+
+<%= render "shared/navbar" %>
+
+
+<div class="tinder--cards">
+  <% @questions.each do |question|%>
+    <div class="tinder--card">
+      <%= image_tag question.photourl%>
+      <p><%= question.description%> </p>
+    </div>
+  <% end %>
+</div>
+
+<div class="tinder--buttons">
+ <button id="nope">
+      <i class="fa fa-times" style="color: #54436B;"></i>
+  </button>
+  <button id="love">
+      <i class="fa fa-heart"></i>
+ </button>
+</div>

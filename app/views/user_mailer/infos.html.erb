@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <style>
+      .imagem {
+        text-align: center;
+      }
+
+      .container{
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .cont {
+        background: linear-gradient(90deg, rgba(84,67,107,1) 0%, rgba(117,236,182,1) 52%, rgba(80,203,147,1) 100%);
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 52px;
+        color:#9771c8;
+        font-family:  sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 52px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-top: -10px;
+        line-height: 22px;
+        color: #54436B;
+        text-shadow: none;
+      }
+
+      img{
+        width: 50%;
+        border-radius: 5px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="cont">
+        <div class="imagem">
+          <%= image_tag @result.info.photo_url %>
+        </div>
+      </div>
+      <div class="text">
+        <h1> <%= @result.info.dog_name %> </h1>
+          <p> <%= @result.info.dog_description %> </p>
+          <p>Kennel Name: <%= @result.info.kennel_name %> </p>
+          <p>Kennel Owner: <%= @result.info.kennel_owner %> </p>
+      </div>
+    </div>
+  </body>
+</html>
