@@ -1,10 +1,10 @@
 // MAIN BANNER
 
-<div class="cover-container d-flex p-3 mx-auto flex-column main-banner">
+<div class="cover-container d-flex mx-auto flex-column main-banner">
   <header class="masthead mb-auto">
-    <div class="inner d-flex justify-content-between align-content-center my-3 px-4">
-      <%= link_to "/", class: "navbar-brand" do %>
-        <%= image_tag "logo.png", width: 80, height: 80 %>
+    <div class="inner d-flex justify-content-between align-content-center">
+      <%= link_to "/", class: "banner-logo" do %>
+        <%= image_tag "logo.png" %>
       <% end %>
 
         <% if user_signed_in? %>
@@ -22,8 +22,14 @@
 
 // BANNER text
 
-<div class="container-fluid banner-text-bg">
-  <%# <h1>FIND YOUR PERFECT MATCH!</h1> %>
+<div class="container-fluid banner-text-bg d-flex justify-content-center">
+  <h1 class="banner-main-text">FIND YOUR PERFECT MATCH!</h1>
+</div>
+
+// BANNER BOTTOM
+
+<div class="cointainer-fluid footer-bg">
+
 </div>
 
 
