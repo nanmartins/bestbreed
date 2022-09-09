@@ -16,7 +16,7 @@ body {
 
 .main-banner {
   background-image: url('image05.png');
-  height: 60vh;
+  height: 65vh;
   background-position: center;
   background-position-y: 100%;
   background-size: contain;
@@ -56,6 +56,7 @@ body {
 }
 
 .banner-main-text {
+  display: inline-block;
   color: black;
   font-family: 'Koulen', cursive;
   font-weight: bold;
@@ -63,6 +64,10 @@ body {
   justify-self: center;
   margin-top: 40px;
 
+}
+
+.main-section {
+  margin-top: 40px;
 }
 
 
@@ -90,12 +95,12 @@ footer {
 
 .main-section, .second-main-section, .last-main-section {
   h2 {
-    color: #54436B;
-    text-shadow: #50CB93 1px 2px;
+    color: black;
+    // text-shadow: #50CB93 1px 2px;
   }
   p {
-    color: #646867;
-    text-shadow: #9dffd3 0.5px 0.5px;
+    color: black;
+    // text-shadow: #9dffd3 0.5px 0.5px;
   }
 }
 
