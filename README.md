@@ -29,7 +29,8 @@ Melhor Raça remake.
 
 This will be a new version of the my final project at lewagon.
 
-Next step - Draw a prototype at figma before touch in the code files.
-Create a new style for all components at the application.
+
+ - asdf for manage versions
+   https://asdf-vm.com/
 
 ...
