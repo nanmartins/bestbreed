@@ -6,6 +6,65 @@ body {
   margin: 0;
 }
 
+//////////////// MAIN BANNER, LOGO AND NAV LINKS
+
+.main-banner {
+  background-image: url('image05.png');
+  height: 70vh;
+  background-position: center;
+  background-position-y: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-banner-link {
+  color: black;
+  padding: 10px 25px;
+  // background-color: aquamarine;
+  text-decoration: none;
+  align-self: center;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.main-banner-text {
+  margin: 50px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .main-banner {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-banner {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-banner {
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-banner {
+    height: 35vh;
+  }
+
+  .main-banner-link {
+    padding: 7px 18px;
+  }
+}
+
+///////////////////////////////////////////////
+
+
+
 footer {
   background-color: #54436B;
   justify-content: space-around;
