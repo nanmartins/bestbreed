@@ -86,6 +86,46 @@
     <form action=<%="home/create_quiz"%> method="post"> <button type="submit" class="bottom-start-quiz">Start Quiz</button>
   </div>
 
+  <%# Footer - Copyright %>
+
+
+  <div class="container p-3">
+    <div class="row">
+      <section class="">
+      </section>
+      <!-- Section: Social media -->
+      <section class="mb-1 text-center">
+        <!-- Facebook -->
+        <a class="footer-btn btn-floating m-1" href="#!">
+          <i class="fab fa-facebook-f footer-media-icon"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a class="footer-btn btn-floating m-1" href="#!">
+          <i class="fab fa-instagram footer-media-icon"></i>
+        </a>
+
+        <!-- Linkedin -->
+        <a class="footer-btn btn-floating m-1" href="#!">
+          <i class="fab fa-linkedin-in footer-media-icon"></i>
+        </a>
+
+        <!-- Github -->
+        <a class="footer-btn btn-floating m-1" href="#!">
+          <i class="fab fa-github footer-media-icon"></i>
+        </a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <hr class="mb-3" />
+    <!-- Copyright -->
+    <div class="contaner-fluid d-flex justify-content-around text-center p-3 copyright">
+      © 2022 Copyright:
+      <a href="#" class="back-to-top">Back to top</a>
+    </div>
+    </div>
+  </div>
 
 </div>
 
@@ -99,106 +139,51 @@
 <%# <%= render "shared/navbar" %>
 
 
-<section class="content">
+<%# <section class="content">
   <div class="container col-xxl-8 px-4 py-5 main-section">
-      <div class="container-fluid">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="container-fluid"> %>
+          <%# <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
               <%= image_tag "image03.png", alt: "dog", width: 700, height: 500, class: "d-block mx-lg-auto img-fluid", loading: "lazy" %>
-            </div>
+            <%# </div>
             <div class="col-lg-6">
               <h2 class="display-5 fw-bold 1h-1 mb-3">MELHOR RAÇA</h2>
-              <p class="lead">Do you wanna know which dog breed matches with your lifestyle? We introduce to you MELHOR RAÇA, the best way to find out!</p>
+              <p class="lead">Do you wanna know which dog breed matches with your lifestyle? We introduce to you MELHOR RAÇA, the best way to find out!</p> %>
 
-            </div>
+            <%# </div>
           </div>
         </div>
-      </div>
+      </div> %>
 
-      <div class="container col-xxl-8 px-4 second-main-section">
+      <%# <div class="container col-xxl-8 px-4 second-main-section">
         <div class="container-fluid">
-          <div class="row flex-lg-row align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+          <div class="row flex-lg-row align-items-center g-5 py-5"> %>
+            <%# <div class="col-10 col-sm-8 col-lg-6">
               <%= image_tag "image04.png", alt: "dog", width: 700, height: 500, class: "d-block mx-lg-auto img-fluid", loading: "lazy" %>
-            </div>
+            <%# </div>
             <div class="col-lg-6">
-              <h2 class="display-5 fw-bold 1h-1 mb-3">All breeds</h2>
-              <p class="lead">Choosing a dog can be exciting and nerve-wracking at the same time. That is why we are here!  We hope to help you with your new big step family decision.</p>
-            </div>
-          </div>
+              <h2 class="display-5 fw-bold 1h-1 mb-3">All breeds</h2> %>
+              <%# <p class="lead">Choosing a dog can be exciting and nerve-wracking at the same time. That is why we are here!  We hope to help you with your new big step family decision.</p>
+            </div> %>
+          <%# </div>
         </div>
-      </div>
+      </div> %>
 
-      <div class="px-4 pt-5 text-center last-main-section">
+      <%# <div class="px-4 pt-5 text-center last-main-section">
         <h2 class="display-4 fw-bold">Our quiz</h2>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
+        <div class="col-lg-6 mx-auto"> %>
+          <%# <p class="lead mb-4">
            Less questions, more precision.
            With us, you increase your chance to be happiest as ever with your new pet.
-          </p>
-          <div class="d-grip d-md-flex justify-content-md-center">
-            <form action=<%="home/create_quiz"%> method="post"> <button type="submit" class="btn btn-lg px-4 me-md-2 start-now-btn">Start Quiz</button>
-          </div>
+          </p> %>
+          <%# <div class="d-grip d-md-flex justify-content-md-center"> %>
+
+          <%# </div>
         </div>
         <div class="d-block mx-auto">
-          <div class="container px-5">
+          <div class="container px-5"> %>
             <%# <%= image_tag "image06.png", alt: "dogs", width: 700, height: 500, loading: "lazy", class: "img-fluid" %>
-          </div>
+          <%# </div>
         </div>
       </div>
-</section>
-
-<%# /////////////////////////////////////////////// FOOTER ////////////////////////// %>
-
-
-
-
-<footer class="footer-main-home">
-  <div class="container p-3">
-    <div class="row">
-      <section class="">
-      </section>
-      <!-- Section: Social media -->
-      <section class="mb-1 text-center">
-        <!-- Facebook -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-facebook-f" style="color: #50CB93;"></i>
-        </a>
-
-        <!-- Twitter -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-twitter" style="color: #50CB93;"></i>
-        </a>
-
-        <!-- Google -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-google" style="color: #50CB93;"></i>
-        </a>
-
-        <!-- Instagram -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-instagram" style="color: #50CB93;"></i>
-        </a>
-
-        <!-- Linkedin -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-linkedin-in" style="color: #50CB93;"></i>
-        </a>
-
-        <!-- Github -->
-        <a class="btn footer-btn btn-floating m-1" href="#!" role="button">
-          <i class="fab fa-github" style="color: #50CB93;"></i>
-        </a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-    <hr class="mb-3" />
-    <!-- Copyright -->
-    <div class="text-center p-1">
-      © 2020 Copyright:
-      <a class="text-white" href="">MelhorRaça.com</a>
-    </div>
-    </div>
-  </div>
-</footer>
+</section> %>

@@ -1,20 +1,14 @@
 .login-container {
   margin-top: 80px;
+  color: black;
 }
 
-
-
-.btn {
-  justify-items: center;
-  background-color: #50CB93;
-  padding: 15px 100px;
-  width: max-content;
-  color: #54436B;
+.form-label {
+  color: black;
 }
 
-.btn:hover {
-  color: white;
-  background-color: #50cb94d5;
+.form-control:focus {
+  color: black;
 }
 
 .form-actions {
