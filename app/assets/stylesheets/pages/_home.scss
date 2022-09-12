@@ -96,7 +96,7 @@ body, p {
 }
 
 .banner-bottom-startbtn{
-  padding: 100px 0 150px 0;
+  padding: 120px 0 120px 0;
 }
 
 .bottom-start-quiz {
@@ -106,6 +106,32 @@ body, p {
   border-radius: 5px;
 }
 
+.footer-btn {
+  color: #6850d0;
+}
+
+.footer-btn:hover {
+  color: white;
+}
+.footer-media-icon {
+  font-size: 25px;
+}
+
+.copyright {
+  font-size: 20px;
+  color: #6850d0;
+}
+.back-to-top {
+  color: #6850d0;
+  text-decoration: none;
+  border: 1px solid #6850d0;
+  padding: 7px 14px;
+  border-radius: 5px;
+}
+.back-to-top:hover {
+  color: white;
+  border: 1px solid white;
+}
 /////////////////////////////////////////
 
 
