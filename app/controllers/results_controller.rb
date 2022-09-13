@@ -11,7 +11,7 @@ class ResultsController < ApplicationController
     @result.user = current_user
 
     if @result.save
-      UserMailer.with(result: @result).infos.deliver_now
+      # UserMailer.with(result: @result).infos.deliver_now
 
       redirect_to result_path(@result)
     else

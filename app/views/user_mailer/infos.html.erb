@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%# <!DOCTYPE html>
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
@@ -50,14 +50,14 @@
       <div class="cont">
         <div class="imagem">
           <%= image_tag @result.info.photo_url %>
-        </div>
+        <%# </div>
       </div>
-      <div class="text">
-        <h1> <%= @result.info.dog_name %> </h1>
-          <p> <%= @result.info.dog_description %> </p>
-          <p>Kennel Name: <%= @result.info.kennel_name %> </p>
-          <p>Kennel Owner: <%= @result.info.kennel_owner %> </p>
-      </div>
+      <div class="text"> %>
+        <%# <h1> <%= @result.info.dog_name %>
+          <%# <p> <%= @result.info.dog_description %>
+          <%# <p>Kennel Name: <%= @result.info.kennel_name %>
+          <%# <p>Kennel Owner: <%= @result.info.kennel_owner %>
+      <%# </div>
     </div>
   </body>
-</html>
+</html> %>
