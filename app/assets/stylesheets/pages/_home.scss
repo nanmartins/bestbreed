@@ -93,15 +93,23 @@ body, p {
   padding-top: 160px;
 }
 
-.banner-bottom-startbtn{
+.banner-bottom-startbtn {
   padding: 120px 0 120px 0;
 }
 
 .bottom-start-quiz {
   font-size: 40px;
+  background-color: white;
   padding: 15px 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
+  transition: 0.5s;
+}
+.bottom-start-quiz:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  transition: 0.6s;
 }
 
 .footer-btn {
