@@ -20,12 +20,12 @@
 
   <%# DEVISE-LOGIN %>
   <div class="container-fluid login-container">
-    <div class="card d-grid gap-5 col-10 col-lg-6 mx-auto devise-login-card">
-      <div class="card-header">
-        <h2 class="text-center">Welcome</h2>
+    <div class="card d-grid gap-4 col-10 col-lg-6 mx-auto devise-login-card">
+      <div class="card-header devise-card-header">
+        <h2 class="devise-card-text">Welcome</h2>
       </div>
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="d-grid gap-5 col-10 col-lg-6 mx-auto sign-in-link">
+      <div class="d-grid gap-2 col-10 col-lg-6 mx-auto sign-in-link">
         <div class="form-inputs form-group">
           <%= f.input :email,
                       required: false,

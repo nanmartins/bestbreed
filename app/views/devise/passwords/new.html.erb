@@ -1,18 +1,78 @@
-<h2>Forgot your password?</h2>
+<div class="container_fluid devise-login-bg">
 
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
+  <header class="masthead mb-auto">
+    <div class="inner d-flex justify-content-between align-content-center px-4">
+      <%= link_to "/", class: "navbar-brand" do %>
+        <%= image_tag "logo.png", width: 80, height: 80 %>
+      <% end %>
 
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-  </div>
+      <% if user_signed_in? %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "main-banner-link" %>
+      <% else %>
+        <div class="main-banner-nouser-link d-flex align-content-center justify-content-end">
+          <%= link_to "Sign up", new_user_registration_path, class: "main-banner-link" %>
+          <%= link_to "Login", new_user_session_path, class: "main-banner-link" %>
+        </div>
+      <% end %>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
-<% end %>
+    </div>
+  </header>
 
-<%= render "devise/shared/links" %>
+
+
+
+
+
+  <div class="container-fluid login-container py-5">
+      <div class="card d-grid gap-4 col-10 col-lg-6 mx-auto devise-login-card">
+        <div class="card-header devise-card-header">
+          <h2 class="devise-card-text">Forgot your password?</h2>
+        </div>
+        <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= f.error_notification %>
+        <div class="d-grid gap-4 col-12 col-lg-6 mx-auto sign-in-link px-2">
+          <div class="form-inputs form-group">
+            <%= f.input :email,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Send me reset password instructions", class: "devise-reset-password" %>
+          </div>
+        </div>
+      </div>
+        <% end %>
+    </div>
+
+    <div class="container devise-footer-medias">
+      <div class="row">
+        <section class="mb-1 text-center">
+          <a class="devise-media-btn btn-floating m-1" href="#!">
+            <i class="fab fa-facebook-square devise-footer-media-icon"></i>
+          </a>
+
+          <a class="devise-media-btn btn-floating m-1" href="#!">
+            <i class="fab fa-instagram devise-footer-media-icon"></i>
+          </a>
+
+          <a class="devise-media-btn btn-floating m-1" href="#!" >
+            <i class="fab fa-linkedin-in devise-footer-media-icon"></i>
+          </a>
+
+          <a class="devise-media-btn btn-floating m-1" href="https://github.com/nanmartins/bestbreed" target="_blank">
+            <i class="fab fa-github devise-footer-media-icon"></i>
+          </a>
+        </section>
+      </div>
+
+      <hr class="divider mt-4" />
+
+      <div class="contaner-fluid d-flex align-items-center justify-content-center text-center devise-copyright">
+        © 2022 yourpetmatch.
+      </div>
+      </div>
+    </div>
+
+</div>
