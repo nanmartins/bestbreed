@@ -1,37 +1,40 @@
-<header class="masthead mb-auto">
-  <div class="inner d-flex justify-content-between align-content-center my-3 px-4">
-    <%= link_to "/", class: "navbar-brand" do %>
-      <%= image_tag "logo.png", width: 80, height: 80 %>
-    <% end %>
+<div class="container-fluid questions-bg"></div>
+  <header class="masthead mb-auto">
+    <div class="inner d-flex justify-content-between align-content-center mb-3 px-4">
+      <%= link_to "/", class: "navbar-brand" do %>
+        <%= image_tag "logo.png", width: 70, height: 70 %>
+      <% end %>
 
-    <% if user_signed_in? %>
-      <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "main-banner-link" %>
-    <% else %>
-      <div class="main-banner-nouser-link d-flex align-content-center justify-content-end">
-        <%= link_to "Sign up", new_user_registration_path, class: "main-banner-link" %>
-        <%= link_to "Login", new_user_session_path, class: "main-banner-link" %>
+      <% if user_signed_in? %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "main-banner-link" %>
+      <% else %>
+        <div class="main-banner-nouser-link d-flex align-content-center justify-content-end">
+          <%= link_to "Sign up", new_user_registration_path, class: "main-banner-link" %>
+          <%= link_to "Login", new_user_session_path, class: "main-banner-link" %>
+        </div>
+      <% end %>
+
+    </div>
+  </header>
+
+
+
+  <div class="tinder--cards">
+    <% @questions.each do |question|%>
+      <div class="tinder--card">
+        <%= image_tag question.photourl%>
+        <p><%= question.description%> </p>
       </div>
     <% end %>
-
   </div>
-</header>
 
-
-
-<div class="tinder--cards">
-  <% @questions.each do |question|%>
-    <div class="tinder--card">
-      <%= image_tag question.photourl%>
-      <p><%= question.description%> </p>
-    </div>
-  <% end %>
-</div>
-
-<div class="tinder--buttons">
- <button id="nope">
+  <div class="tinder--buttons">
+    <button id="nope">
       <i class="fa fa-times" style="color: #54436B;"></i>
-  </button>
-  <button id="love">
+    </button>
+    <button id="love">
       <i class="fa fa-heart"></i>
- </button>
+    </button>
+  </div>
+
 </div>

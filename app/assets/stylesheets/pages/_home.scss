@@ -71,7 +71,7 @@ body, p {
   padding-top: 120px;
 }
 
-.banner-text-cardstitle {
+ .banner-text-cardstitle{
   font-family: 'Koulen', cursive;
   font-size: 62px;
   text-shadow: 2px 1px #89e1ae;
@@ -110,7 +110,7 @@ body, p {
 .banner-iconscards-title {
   font-family: 'Koulen', cursive;
   font-size: 42px;
-  text-shadow: 1px 1px #89e1ae;
+  text-shadow: 2px 2px #89e1ae;
   font-style: italic;
 }
 
@@ -231,12 +231,18 @@ body, p {
 }
 // 991 PX SCREEN
 @media only screen and (max-width: 991px) {
+  .banner-main-text {
+    line-height: 5.5rem;
+  }
   .banner-bottom-iconsdiv {
     padding: 80px 20px;
     // background-color: rgba(224, 222, 222, 0.579);
-    background-color: rgba(224, 222, 222, 0.296);
-    box-shadow: 5px 5px rgba(121, 121, 121, 0.213);
+    background-color: rgba(224, 222, 222, 0.516);
+    box-shadow: 5px 5px rgba(121, 121, 121, 0.443);
     border-radius: 20px;
+  }
+  .banner-text-cards {
+    line-height: 2.2rem;
   }
   .banner-bottom-iconscards {
     padding-bottom: 10%;
@@ -282,6 +288,9 @@ body, p {
 // }
 // 554 PX SCREEN
 @media only screen and (max-width: 554px) {
+  .banner-text-cardstitle {
+    font-size: 50px;
+  }
   .banner-main-first {
     padding-top: 40px;
   }
