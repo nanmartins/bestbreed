@@ -19,10 +19,23 @@
   align-self: center;
 }
 
-.devise-login-btn {
+
+.devise-card-text {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   font-family: 'Koulen', cursive;
   color: #6850d0;
-  padding: 7px 20px;
+  text-shadow: 2px 2px #89e1ae;
+  font-style: italic;
+  margin: 0;
+}
+
+.devise-login-btn {
+  font-family: 'Koulen', cursive;
+  font-size: 18px;
+  color: #6850d0;
+  padding: 8px 35px;
   text-decoration: none;
   align-self: center;
   margin-left: 10px;
@@ -48,6 +61,16 @@
 }
 .devise-forget-btn:hover {
   color: #6cce95;
+}
+
+// send reset password instructions btn
+.devise-reset-password {
+  // padding: 10px;
+  color: #6850d0;
+  text-decoration: underline;
+}
+.devise-reset-password:hover {
+  color: #6cce95
 }
 
 // footer medias
@@ -90,7 +113,6 @@
 .form-actions {
   text-align: center;
 }
-
 
 // MEDIA
 
