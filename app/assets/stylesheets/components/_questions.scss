@@ -129,6 +129,9 @@ h3, p {
 
 // MEDIA
 @media only screen and (max-width: 700px) {
+  .tinder--cards {
+    padding-top: 100px;
+  }
   .tinder--card {
     max-width: 500px;
     height: 400px;
@@ -140,6 +143,9 @@ h3, p {
 }
 
 @media only screen and (max-width: 550px) {
+  .tinder--cards {
+    padding-top: 80px;
+  }
   .tinder--card {
     max-width: 400px;
     height: 350px;

@@ -114,51 +114,6 @@
    *width:auto
   }
 
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .result-img img {
-      max-width: 310px !important;
-    }
-    .back_blog::after {
-      max-width: 100% !important;
-      height: 300px !important;
-    }
-    .heading_s1 h3, .heading_s1 .h3 {
-      font-size: 30px !important;
-    }
-  }
-
-  @media only screen and (max-width: 767px) {
-    .Mb\(8px\)--s {
-      margin-bottom:8px
-    }
-    .Mb\(10px\)--s {
-      margin-bottom:10px
-    }
-    .Pos\(r\)--s {
-      position:relative
-    }
-    .Ta\(c\)--s {
-      text-align:center
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1400px) {
-    .Ta\(c\)--ltxl {
-      text-align:center
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    .Mb\(8px\)--ml {
-      margin-bottom:8px
-    }
-    .Pos\(r\)--ml {
-      position:relative
-    }
-    .Ta\(c\)--ml {
-      text-align:center
-    }
-  }
 @-webkit-keyframes logoAnimation {
   50% {
   transform:scale(1.2)
@@ -170,121 +125,55 @@
   }
 }
 
-.body {
-  font-family: sans-serif;
+svg {
+  filter: drop-shadow(2px 2px #89e1ae);
+  font-family: 'Koulen', cursive;
 }
 
-.layout_padding {
-  padding-top: 30px;
-}
-.p-relative {
-  position: relative;
-}
 
-.p-relative.r-left img {
-  float: left;
-}
+// NEW STYLE FOR THE RESULTS
 
-.p-relative.r-left .back_blog::after {
-  left: -50px;
-  top: -65px;
-}
-
-.p-relative.r-left .back_blog::after {
-  left: -50px;
-  top: -65px;
-}
-
-.full {
-  width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.back_blog::after {
-  max-width: 545px;
-  position: absolute;
-  height: 575px;
-  content: "";
-  right: -50px;
-  top: -65px;
-  box-shadow: 0 0 60px -10px rgba(0,0,0,.15);
-  background: #89e1ae;
-}
-
-.back_blog img {
-  position: relative;
-  z-index: 1;
-}
-
-.back_blog img {
-  width: auto;
-  float: right;
-}
-
-.back_blog {
-  margin-bottom: 50px;
-}
-
-.padding_right_left_15 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.padding_right_left_15 {
-  margin: 20px 0;
-}
-
-.padding_right_left_15 {
-  background: #6850d0;
-  padding: 30px 35px;
-  margin: 0 0 30px 0;
-}
-
-.heading_s1 h3 {
-  font-size: 52px;
-  color:#9771c8;
-  font-family:  sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 52px;
-  margin-bottom: 40px;
-}
-
-.heading_s1 p {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 40px;
-  margin-top: -10px;
-  line-height: 22px;
-  color: #6850d0;;
-  text-shadow: none;
-}
-
-.breed-title{
-  text-align:center;
-  margin-top:50px;
-  margin-bottom:30px;
-}
-
-.breed-information{
-  display: flex;
-  margin-top: 30px;
-}
-
-.breed-description{
-  margin-left: 10px;
-}
-
-.result-img img{
-  max-width: 545px;
-  border-radius: 3px;
-  z-index: 1;
-}
 .results-details{
   margin-top: 120px;
 }
 
-svg {
-  filter: drop-shadow(3px 1px 2px #141414);
+.results-bg {
+  background-image: url('banner-bg.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.results-banner-img {
+  border-radius: 6px;
+  box-shadow: 4px 4px #b0b1b0;
+}
+
+.results-banner {
+  padding-top: 50px;
+}
+
+.results-banner-title {
+  font-family: 'Koulen', cursive;
+  color: black;
+  font-size: 78px;
+  text-shadow: 2px 2px #89e1ae;
+  font-style: italic;
+}
+
+.results-banner-description {
+  font-size: 22px;
+}
+
+
+// MEDIA
+@media only screen and (max-width: 1199px) {
+  .results-bg {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .results-bg {
+    height: 100%;
+  }
 }
