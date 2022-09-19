@@ -17,7 +17,7 @@
    quiz_id: Quiz.first.id, description: "Do you have time and energy to play with your new friend?", photourl: "https://images.unsplash.com/photo-1525253086316-d0c936c814f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" )
   # true == >= 5 (energy_level_value)
   Question.create(
-  quiz_id: Quiz.first.id, description: "Trainability is it something that really matters to you?", photourl: "https://images.unsplash.com/photo-1544456948-c7ba22fe7111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+  quiz_id: Quiz.first.id, description: "Trainability is something that really matters to you?", photourl: "https://images.unsplash.com/photo-1544456948-c7ba22fe7111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
   # true == >= (trainability_value)
   Question.create(
   quiz_id: Quiz.first.id,  description: "Is it important to you that your dog accept other animals and strangers?", photourl: "https://images.pexels.com/photos/4588015/pexels-photo-4588015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
