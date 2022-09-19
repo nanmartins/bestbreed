@@ -137,15 +137,10 @@ svg {
   margin-top: 120px;
 }
 
-.results-bg {
-  background-image: url('banner-bg.png');
-  height: 100vh;
-  background-repeat: no-repeat;
-}
-
 .results-banner-img {
   border-radius: 6px;
-  box-shadow: 4px 4px #b0b1b0;
+  border: 1px solid black;
+  box-shadow: 4px 4px #89e1ae;
 }
 
 .results-banner {
@@ -162,18 +157,17 @@ svg {
 
 .results-banner-description {
   font-size: 22px;
+  margin-bottom: 30px;
 }
 
 
 // MEDIA
-@media only screen and (max-width: 1199px) {
-  .results-bg {
-    height: 100%;
-  }
-}
 
-@media only screen and (max-width: 991px) {
-  .results-bg {
-    height: 100%;
+@media only screen and (max-width: 700px) {
+  .results-banner-title {
+    font-size: 52px;
+  }
+  .results-banner-description {
+    font-size: 20px;
   }
 }

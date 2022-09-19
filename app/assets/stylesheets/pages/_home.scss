@@ -4,8 +4,14 @@ body, p {
   margin: 0;
 }
 
+body {
+  background-image: url('banner-bg.png');
+  background-position: top;
+}
+
 .main-banner {
   background-image: url('image05.png');
+  background-color: white;
   height: 65vh;
   background-position: center;
   background-position-y: 100%;
@@ -49,7 +55,6 @@ body, p {
 //////  BANNER TEXT
 
 .banner-text-bg {
-  // height: 160vh;
   background-image: url('banner-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +69,7 @@ body, p {
   font-weight: bold;
   font-size: 155px;
   justify-self: center;
-  margin-top: 40px;
+  padding-top: 40px;
 
 }
 
@@ -95,7 +100,6 @@ body, p {
 
 
 .footer-bg {
-  // height: 120vh;
   background-image: url('footer-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -222,7 +226,6 @@ body, p {
   .banner-main-first {
     padding-top: 100px;
   }
-
 }
 // 992 PX SCREEN (JUST FOR REMOVE THE DIVIDER)
 @media only screen and (min-width: 992px) {
@@ -237,7 +240,6 @@ body, p {
   }
   .banner-bottom-iconsdiv {
     padding: 80px 20px;
-    // background-color: rgba(224, 222, 222, 0.579);
     background-color: rgba(224, 222, 222, 0.516);
     box-shadow: 5px 5px rgba(121, 121, 121, 0.443);
     border-radius: 20px;
@@ -249,7 +251,6 @@ body, p {
     padding-bottom: 10%;
   }
   .footer-bg {
-    // height: 170vh;
     background-position-y: 0%;
   }
 }
@@ -270,7 +271,6 @@ body, p {
 @media only screen and (max-width: 600px) {
   .main-banner {
     background-position-y: 100%;
-    // height: 35vh;
     padding: 0 !important;
   }
   .main-banner-link {
@@ -281,12 +281,6 @@ body, p {
     padding: 0px 20px;
   }
 }
-// 575 PX SCREEN
-// @media only screen and (max-width: 575px) {
-//   .banner-bottom-iconsdiv {
-//     padding: 80px 10px;
-//   }
-// }
 // 554 PX SCREEN
 @media only screen and (max-width: 554px) {
   .banner-text-cardstitle {
@@ -301,9 +295,6 @@ body, p {
   .inner {
     margin: 0;
     padding: 0 15px;
-  }
-  .banner-bottom-iconsdiv {
-    padding-top: 40%;
   }
   .banner-bottom-iconscards {
     padding-bottom: 5%;

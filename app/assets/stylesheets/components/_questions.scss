@@ -8,17 +8,14 @@
 
 body {
   max-width: 100%;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
+// need to remove this and add to classes to respective elements tag
 h3, p {
   font-family: 'Koulen', cursive;
   color: black;
   text-shadow: #50cb93 1px 1px;
-}
-
-.questions-bg {
-  background-image: url('banner-bg.png');
 }
 
 
@@ -80,7 +77,8 @@ h3, p {
 }
 
 .tinder--card p {
-  color: #6850d0;
+  // color: #6850d0;
+  color: black;
   margin-top: 16px;
   font-size: 23px;
   padding: 0;

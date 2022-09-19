@@ -1,9 +1,9 @@
 <div class="container_fluid devise-login-bg">
 
   <header class="masthead mb-auto">
-    <div class="inner d-flex justify-content-between align-content-center px-4">
-      <%= link_to "/", class: "navbar-brand" do %>
-        <%= image_tag "logo.png", width: 80, height: 80 %>
+    <div class="inner d-flex justify-content-between align-content-center pt-3 px-4">
+      <%= link_to "/", class: "banner-logo" do %>
+        <%= image_tag "logo.png" %>
       <% end %>
 
       <% if user_signed_in? %>
