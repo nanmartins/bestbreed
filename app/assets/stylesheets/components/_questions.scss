@@ -125,6 +125,23 @@ h3, p {
 }
 
 
+// MEDIA VERTICAL
+
+@media only screen and (max-height: 750px) {
+  .tinder--cards {
+    padding-top: 40px;
+  }
+  .tinder--card {
+    max-width: 500px;
+    height: 420px;
+  }
+  .tinder--buttons {
+    margin-top: 440px;
+    margin-bottom: 20px;
+  }
+}
+
+
 // MEDIA
 @media only screen and (max-width: 700px) {
   .tinder--cards {
@@ -168,21 +185,5 @@ h3, p {
   .tinder--buttons {
     margin-top: 350px;
     margin-bottom: 30px;
-  }
-}
-
-// MEDIA VERTICAL
-
-@media only screen and (max-height: 750px) {
-  .tinder--cards {
-    padding-top: 40px;
-  }
-  .tinder--card {
-    max-width: 500px;
-    height: 420px;
-  }
-  .tinder--buttons {
-    margin-top: 440px;
-    margin-bottom: 20px;
   }
 }
