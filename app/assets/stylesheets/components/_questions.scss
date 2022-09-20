@@ -11,13 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-// need to remove this and add to classes to respective elements tag
-h3, p {
-  font-family: 'Koulen', cursive;
-  color: black;
-  text-shadow: #50cb93 1px 1px;
-}
-
 
 // code bellow is from the origin melhorraca
 .tinder_love .fa-heart {
@@ -76,14 +69,17 @@ h3, p {
   pointer-events: none;
 }
 
-.tinder--card p {
-  line-height: 1.6rem;
-  color: black;
-  margin-top: 12px;
-  font-size: 23px;
-  padding: 0;
+.questions-cards-questions {
+  font-family: 'Koulen', cursive;
+  text-shadow: #50cb93 1px 1px;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 0 5px;
+  // line-height: 1.6rem;
   pointer-events: none;
+  color: black;
 }
+
 
 .tinder--buttons {
   display: flex;
@@ -176,10 +172,10 @@ h3, p {
     max-width: 370px;
     height: 320px;
   }
-  .tinder--card p {
+  .questions-cards-questions {
     margin-top: 10px;
     font-size: 16px;
-    padding: 0;
+    padding: 0 5px;
     pointer-events: none;
   }
   .tinder--buttons {

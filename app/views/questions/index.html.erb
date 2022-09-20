@@ -23,7 +23,7 @@
     <% @questions.each do |question|%>
       <div class="tinder--card">
         <%= image_tag question.photourl%>
-        <p><%= question.description%> </p>
+        <p class="questions-cards-questions"><%= question.description%> </p>
       </div>
     <% end %>
   </div>
