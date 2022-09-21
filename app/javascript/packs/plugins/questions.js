@@ -1,4 +1,4 @@
-'use strict';
+
 import * as Hammer from "hammerjs";
 
 const runSlides = () => {
@@ -7,7 +7,7 @@ const runSlides = () => {
   var nope = document.getElementById('nope');
   var love = document.getElementById('love');
 
-  function initCards(card, index) {
+  function initCards() {
     var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
 
     newCards.forEach(function (card, index) {
@@ -15,7 +15,6 @@ const runSlides = () => {
       card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
       card.style.opacity = (10 - index) / 10;
     });
-    // tinderContainer.classList.add('loaded');
 
   }
 
@@ -24,7 +23,7 @@ const runSlides = () => {
   allCards.forEach(function (el) {
     var hammertime = new Hammer(el);
 
-    hammertime.on('pan', function (event) {
+    hammertime.on('pan', function () {
       el.classList.add('moving');
     });
 
