@@ -11,7 +11,7 @@ require("@fortawesome/fontawesome-free")
 // require("bootstrap")
 
 import { runSlides } from "./plugins/questions"
-import { initSmoothScroll } from "./plugins/home-first-banner"
+import { initSmoothScroll } from "./plugins/smoothScroll"
 import "channels"
 import "controllers"
 import "bootstrap"
