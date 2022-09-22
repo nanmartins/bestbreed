@@ -196,6 +196,35 @@ body {
 /////////////////////////////////////////
 
 
+// JS SCROLL ANIMATION
+// first banner
+
+.js-scroll {
+  filter: blur(10px);
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(-300px);
+}
+
+.banner-main-second {
+  transform: translateX(300px);
+}
+.banner-bottom-iconsdiv {
+  transform: translateY(-200px);
+}
+
+.js-scroll-active {
+  filter: blur();
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+// second banner
+
+
+
+
+////////////////////////////////////////
 
 ////// @MEDIA
 
@@ -239,6 +268,9 @@ body {
 @media only screen and (max-width: 991px) {
   .banner-main-text {
     line-height: 5.5rem;
+  }
+  .banner-main-first {
+    // padding-top: 100px;
   }
   .banner-bottom-iconsdiv {
     padding: 80px 20px;
@@ -289,7 +321,7 @@ body {
     font-size: 50px;
   }
   .banner-main-first {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   .banner-main-text {
     padding-top: 40px;
