@@ -25,6 +25,7 @@ function initSmoothScroll() {
     })
 
 }
+initSmoothScroll()
 
 
 window.addEventListener('scroll', initSmoothScroll);

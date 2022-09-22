@@ -203,11 +203,14 @@ body {
   filter: blur(10px);
   opacity: 0;
   transition: 1s;
-  transform: translate3d(-300px, 0, 0);
+  transform: translateX(-300px);
 }
 
 .banner-main-second {
-  transform: translate3d(300px, 0, 0);
+  transform: translateX(300px);
+}
+.banner-bottom-iconsdiv {
+  transform: translateY(-200px);
 }
 
 .js-scroll-active {
@@ -266,6 +269,9 @@ body {
   .banner-main-text {
     line-height: 5.5rem;
   }
+  .banner-main-first {
+    // padding-top: 100px;
+  }
   .banner-bottom-iconsdiv {
     padding: 80px 20px;
     background-color: rgba(224, 222, 222, 0.516);
@@ -315,7 +321,7 @@ body {
     font-size: 50px;
   }
   .banner-main-first {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   .banner-main-text {
     padding-top: 40px;
