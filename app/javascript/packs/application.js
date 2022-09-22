@@ -20,7 +20,6 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-initSmoothScroll();
 
 document.addEventListener('turbolinks:load', () => {
   runSlides(),
