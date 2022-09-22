@@ -7,19 +7,21 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
-// require("bootstrap")
 require("@fortawesome/fontawesome-free")
+// require("bootstrap")
 
 import { runSlides } from "./plugins/questions"
+import { initSmoothScroll } from "./plugins/home-first-banner"
 import "channels"
 import "controllers"
 import "bootstrap"
-// console.log("Hello from app/javascript/packs/application.js!");
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+
 document.addEventListener('turbolinks:load', () => {
-  runSlides()
+  runSlides(),
+  initSmoothScroll()
 });
