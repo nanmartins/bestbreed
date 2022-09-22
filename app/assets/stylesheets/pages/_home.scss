@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body, p {
   height: auto;
   padding: 0;
@@ -7,6 +11,7 @@ body, p {
 body {
   background-image: url('banner-bg.png');
   background-position: top;
+  overflow-x: hidden;
 }
 
 .main-banner {
