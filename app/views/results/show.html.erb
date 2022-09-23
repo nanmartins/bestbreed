@@ -1,6 +1,6 @@
  <div class="container-fluid results-bg">
   <header class="masthead mb-auto">
-    <div class="inner d-flex justify-content-between align-content-center mb-3 pt-3 px-3">
+    <div class="inner d-flex justify-content-between align-content-center mb-3 pt-2 px-3">
       <%= link_to "/", class: "banner-logo" do %>
         <%= image_tag "logo.png" %>
       <% end %>
@@ -421,7 +421,7 @@
       </div>
 
       <%# results info %>
-      <div class="container-fluid d-flex justify-content-center">
+      <div class="container-fluid d-flex justify-content-center result-img-div js-scroll">
         <%= image_tag @result.info.photo_url, alt: "dog match", class: "mx-lg-auto img-fluid results-banner-img", loading: "lazy" %>
       </div>
 
@@ -431,22 +431,6 @@
       <div class="container-fluid d-flex justify-content-center">
         <p class="lead results-banner-description"><%=@result.info.dog_description%></p>
       </div>
-
-
-
-      <%# <div class="container col-xxl-12 main-section results-banner">
-        <div class="container-fluid">
-          <div class="row align-items-center g-3"> %>
-            <%# <div class="col-12 col-sm-8 col-lg-6">
-              <%= image_tag @result.info.photo_url, alt: "dog match", class: "d-flex justify-self-center img-fluid results-banner-img", loading: "lazy" %>
-            <%# </div>
-            <div class="col-lg-6"> %>
-              <%# <h2 class="display-5 fw-bold 1h-1 mb-3 results-banner-title"><%=@result.info.dog_name%>
-              <%# <p class="lead results-banner-description"><%=@result.info.dog_description%>
-            <%# </div>
-          </div>
-        </div>
-      </div> %>
 
     </div>
   </section>
