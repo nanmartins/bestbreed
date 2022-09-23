@@ -1,15 +1,4 @@
 function initSmoothScroll() {
-  // const cards = document.querySelector('.banner-main-first');
-  // const halfWindow = window.innerHeight * 0.5;
-  // const cardsTop = cards.getBoundingClientRect().top;
-  // const isVisible = (cardsTop - halfWindow) < 100;
-
-  //   if(isVisible) {
-  //     cards.classList.add('js-scroll-active');
-  //   } else {
-  //     cards.classList.remove('js-scroll-active');
-  //   }
-
   const cards = document.querySelectorAll('.js-scroll');
   const halfWindow = window.innerHeight * 0.5;
 
@@ -29,3 +18,4 @@ initSmoothScroll()
 
 
 window.addEventListener('scroll', initSmoothScroll);
+initSmoothScroll()
