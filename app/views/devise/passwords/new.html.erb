@@ -24,13 +24,13 @@
 
 
   <div class="container-fluid login-container py-5">
-      <div class="card d-grid gap-4 col-10 col-lg-6 mx-auto devise-login-card">
+      <div class="card d-grid gap-2 col-10 col-lg-6 mx-auto devise-login-card">
         <div class="card-header devise-card-header">
           <h2 class="devise-card-text">Forgot your password?</h2>
         </div>
         <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
     <%= f.error_notification %>
-        <div class="d-grid gap-4 col-12 col-lg-6 mx-auto sign-in-link px-2">
+        <div class="d-grid gap-4 col-12 col-lg-6 mx-auto sign-in-link forget-pass px-2">
           <div class="form-inputs form-group">
             <%= f.input :email,
                   required: true,
