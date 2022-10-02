@@ -83,10 +83,11 @@
   color: #6cce95;
   text-decoration: none;
   transition: 0.4s;
-}
-.devise-media-btn:hover {
-  color: white;
-  transition: 0.4s;
+
+    &:hover {
+      color: white;
+      transition: 0.4s;
+    }
 }
 
 .devise-footer-media-icon {
@@ -113,6 +114,7 @@
 .form-actions {
   text-align: center;
 }
+
 
 // MEDIA
 
@@ -143,5 +145,20 @@
   }
   .devise-footer-medias {
     margin-top: 50px;
+  }
+}
+
+// @media only screen and (min-width: 375px) {
+//   .forget-pass {
+//     justify-content: center;
+//     padding: 0 10px;
+//   }
+// }
+
+
+@media only screen and (max-width: 381px) {
+  .forget-pass {
+    display: grid;
+    place-items: center;
   }
 }
