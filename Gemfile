@@ -54,7 +54,7 @@ group :development do
   gem 'spring'
 
   # favicon image
-  gem 'rails_real_favicon'
+  # gem 'rails_real_favicon'
 end
 
 group :test do
